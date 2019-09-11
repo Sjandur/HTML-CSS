@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        input[type=submit] {
+            background-color: black;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        form {
+            float: left;
+        }
+        form#updateForm {
+            clear: right;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h3>Voorbeeld formulier</h3>
+
+<div class="container">
+    <form action="http://www.savatarian.com/html5/form.php">
+        <label for="fname">Voornaam:</label>
+        <input type="text" id="fname" name="firstname" placeholder="Sander">
+
+        <label for="lname">Tussenvoegsel:</label>
+        <input type="text" id="mname" name="middlename" placeholder="de">
+
+        <label for="lname">Achternaam:</label>
+        <input type="text" id="lname" name="lastname" placeholder="Gast">
+
+        <label for"gender">Geslacht:</label><br>
+        <input type="radio" name="gender" value="male" checked> Man
+        <input type="radio" name="gender" value="female" checked> Vrouw
+        <input type="radio" name="gender" value="other" checked> Anders<br>
+
+        <br>
+        <label for="kleurogen">Kleur ogen:</label>
+        <select id="kleurogen" name="kleurogen">
+            <option value="Groen">Groen</option>
+            <option value="Blauw">Blauw</option>
+            <option value="Bruin">Bruin</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Typ iets" style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+
+    <form>
+        <label for"lekkereten">Lekker eten:</label><br>
+        <input type="checkbox" name="eten1" value="Sperciebonen"> Sperciebonen<br>
+        <input type="checkbox" name="eten2" value="Aardappelen"> Aardappelen<br>
+        <input type="checkbox" name="eten3" value="Hamburger" checked> Hamburger<br><br>
+    </form>
+</div>
+
+</body>
+</html>
